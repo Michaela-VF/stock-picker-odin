@@ -1,9 +1,9 @@
-```
-known   : 
-    array_of_stock_prices
-unknown : 
-    array_of_best_days [by, sell]
-```
+
+# known   : 
+#     array_of_stock_prices
+# unknown : 
+#     array_of_best_days [by, sell]
+
 def stock_picker(array_of_stock_prices)
 
     higher_profit = 0
@@ -21,12 +21,6 @@ def stock_picker(array_of_stock_prices)
             end
         end
     end
+    print "Buy on day #{best_days[0]} and sell on day #{best_days[1]} for a maximum profit of $#{higher_profit}!"
     best_days
 end
-
-
-# Simulated tests:
-array_of_stock_prices = [17,3,6,9,15,8,6,1,10]
-# indexed_of_array_prices = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-print stock_picker(array_of_stock_prices)
-# should print: [1,4]
